@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 340; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 205; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -278,9 +278,17 @@ img {
     align-items: center;
 }
 
+.home__jam{
+    color: var(--first-color);
+    /* justify-content:center;
+    display: inline-block; */
+    margin-right: .5rem;
+}
+
 .home__social{
     display: grid;
     grid-template-columns: max-content;
+    justify-content: center;
     row-gap: 1rem;
 }
 
@@ -402,19 +410,18 @@ img {
 .about__img{
     width: 200px;
     border-radius: .5rem;
-    justify-self: center;
-    align-self: center;
+     justify-self: center;
 }
 
 .about__description{
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-1-5);
 }
 
 .about__info{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-1-5);
 }
 
 .about__info-title{
@@ -524,6 +531,9 @@ img {
     width: 80%;
 }
 
+.skills__canva{
+    width: 85%;
+}
 .skills__spss{
     width: 80%;
 }
@@ -585,7 +595,7 @@ img {
 }
 
 .skills__tm{
-    width: 85%;
+    width: 90%;
 }
 
 .skills__sc{
@@ -764,6 +774,7 @@ img {
 }
 
 .services__modal-title{
+    text-align: center;
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
@@ -856,7 +867,8 @@ img {
 
 .project__bg{
     background-color: var(--first-color);
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .project__title{
@@ -874,7 +886,7 @@ img {
 }
 
 .project__img{
-    width: 232px;
+    width: 352px;
     justify-self: center;
 }
 
@@ -899,9 +911,18 @@ img {
     font-weight: var(--font-medium);
 }
 
-.contact_subtitle{
+/* .contact_subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
+} */
+
+.contact__social{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.contact__social:hover{
+    color:var(--first-color-lighter);
 }
 
 .contact__content{
@@ -1042,7 +1063,7 @@ img {
     .home__blob{
         width: 180px;
     }
-
+    
     .skills__title{
         font-size: var(--normal-font-size);
     }
@@ -1217,7 +1238,7 @@ img {
     .project__container{
         background-color: var(--first-color-second);
         border-radius: 1rem;
-        padding: 3rem 2.5rem 0;
+        padding: 3rem 2.5rem 3rem 2.5rem;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
